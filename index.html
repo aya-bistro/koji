@@ -3,40 +3,285 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>麹フレンチ｜あやシェフ</title>
-<meta name="description" content="発酵と麹でつくる、あたらしいおうちフレンチ。あやシェフの新しい学びの場、まもなく公開します。">
-<meta property="og:title" content="麹フレンチ｜あやシェフ">
-<meta property="og:description" content="発酵と麹でつくる、あたらしいおうちフレンチ。まもなく公開します。">
-<meta property="og:type" content="website">
+<title>その塩麹、また余らせますか？｜麹フレンチ無料セミナー</title>
+<meta name="description" content="冷蔵庫で寝ている麹が、毎日のごはんを回しはじめる。フレンチ料理家あやシェフと麹の専門家りょこさんが「なぜ」から教える、使い切れる麹の無料オンラインセミナー。">
 <meta name="robots" content="noindex">
+<meta property="og:title" content="その塩麹、また余らせますか？｜麹フレンチ無料セミナー">
+<meta property="og:description" content="使いこなせないのは、腕のせいじゃない。足りなかったのは「なぜ」の説明だけ。8月末・Zoom・参加無料・アーカイブ配信あり。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://koji.aya-fukazawa.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌾</text></svg>">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-html,body{height:100%}
-body{font-family:'Hiragino Mincho ProN','Yu Mincho','Noto Serif JP',serif;background:#f5f0ea;color:#3a2a1a;display:flex;align-items:center;justify-content:center;min-height:100vh;text-align:center;padding:32px;-webkit-font-smoothing:antialiased}
-.wrap{max-width:520px}
-.fr{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;letter-spacing:4px;color:#8b7355;margin-bottom:22px}
-.mark{font-size:44px;margin-bottom:18px}
-h1{font-size:26px;font-weight:400;letter-spacing:4px;line-height:1.7;margin-bottom:24px}
-.dv{display:flex;align-items:center;justify-content:center;gap:14px;margin:22px 0;color:#c4a882;font-size:14px}
-.dv span{width:44px;height:1px;background:#c4a882;display:inline-block}
-p{font-size:14px;line-height:2.1;color:#5a4a3a}
-.soon{margin-top:30px;font-family:'Cormorant Garamond',serif;letter-spacing:5px;font-size:13px;color:#8b7355}
-.ft{margin-top:34px;font-size:11px;color:#a5967f;letter-spacing:2px}
-@media (prefers-color-scheme: dark){body{background:#1e1712;color:#e9e0d5}h1{color:#e9e0d5}p{color:#c8bcaa}}
+:root{
+ --bg:#f7f2ea; --ink:#3a2a1a; --sub:#6a5a48; --line:#e5dccc;
+ --gold:#c99a3f; --gold-d:#a87f2c; --cream:#fffdf8;
+ --cta:#d98a24; --cta-d:#c1761a;
+}
+body{font-family:'Hiragino Mincho ProN','Yu Mincho','Noto Serif JP',serif;background:var(--bg);color:var(--ink);line-height:1.9;-webkit-font-smoothing:antialiased;font-size:15px}
+.c{max-width:480px;margin:0 auto;background:var(--bg);overflow:hidden}
+img{max-width:100%;display:block}
+.en{font-family:'Cormorant Garamond',serif;letter-spacing:3px}
+strong{font-weight:700}
+.mark-y{color:var(--cta-d);font-weight:700}
+
+/* HERO */
+.hero{padding:40px 26px 34px;text-align:center;background:linear-gradient(180deg,#efe6d4 0%,#f7f2ea 100%);border-bottom:1px solid var(--line)}
+.hero .tag{display:inline-flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-bottom:22px}
+.hero .tag span{font-size:11px;letter-spacing:1px;color:var(--gold-d);border:1px solid var(--gold);border-radius:20px;padding:4px 12px;background:var(--cream)}
+.hero .lead-s{font-size:13px;color:var(--sub);letter-spacing:2px;margin-bottom:14px}
+.hero h1{font-size:30px;font-weight:700;line-height:1.55;letter-spacing:1px;margin-bottom:20px}
+.hero h1 .u{background:linear-gradient(transparent 62%, #f3d79b 62%)}
+.hero .sub{font-size:14px;color:var(--sub);line-height:2}
+.hero .sub b{color:var(--ink)}
+.hero .grain{font-size:34px;margin-bottom:10px}
+
+/* CTA */
+.cta-wrap{padding:22px 22px 6px;text-align:center}
+.cta{display:block;background:var(--cta);color:#fff;text-decoration:none;font-weight:700;font-size:17px;letter-spacing:1px;padding:18px 20px;border-radius:14px;box-shadow:0 8px 20px rgba(217,138,36,.32);transition:transform .1s,box-shadow .2s}
+.cta:active{transform:translateY(1px)}
+.cta .s{display:block;font-size:11px;font-weight:400;opacity:.92;margin-top:4px;letter-spacing:0}
+.cta-note{font-size:11px;color:var(--sub);margin-top:10px;line-height:1.7}
+
+/* SECTION base */
+section{padding:38px 26px}
+.sec-t{font-size:20px;font-weight:700;line-height:1.6;text-align:center;margin-bottom:8px}
+.sec-lead{text-align:center;color:var(--sub);font-size:13px;margin-bottom:24px}
+.divider{width:44px;height:2px;background:var(--gold);margin:0 auto 20px}
+.alt{background:var(--cream)}
+
+/* voices */
+.voices{list-style:none;display:flex;flex-direction:column;gap:12px}
+.voices li{background:var(--bg);border-left:3px solid var(--gold);border-radius:0 10px 10px 0;padding:14px 16px;font-size:14px;color:var(--ink)}
+.alt .voices li{background:#f5efe3}
+.bignum{text-align:center;margin:20px 0 4px}
+.bignum b{font-size:40px;color:var(--gold-d);font-weight:700;line-height:1}
+.bignum .u{display:block;font-size:12px;color:var(--sub);letter-spacing:1px;margin-top:4px}
+
+.p{font-size:14.5px;color:var(--ink);margin-bottom:16px}
+.p.muted{color:var(--sub)}
+
+/* takeaways */
+.take{display:flex;flex-direction:column;gap:14px;margin-top:6px}
+.take .card{background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:20px 18px}
+.take .n{font-family:'Cormorant Garamond',serif;font-size:13px;color:var(--gold-d);letter-spacing:2px;margin-bottom:6px}
+.take h3{font-size:16px;font-weight:700;margin-bottom:8px;line-height:1.5}
+.take p{font-size:13.5px;color:var(--sub);line-height:1.85}
+.take .arch{background:#efe6d4;border:none}
+
+/* teachers */
+.teacher{background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:20px 18px;margin-bottom:14px}
+.teacher .role{font-size:12px;color:var(--gold-d);letter-spacing:1px;margin-bottom:2px}
+.teacher .nm{font-size:18px;font-weight:700;margin-bottom:10px}
+.teacher p{font-size:13.5px;color:var(--sub);line-height:1.9}
+
+/* checklist */
+.checks{list-style:none;display:flex;flex-direction:column;gap:10px}
+.checks li{position:relative;padding-left:30px;font-size:14px;color:var(--ink)}
+.checks li::before{content:"✓";position:absolute;left:0;top:0;color:var(--gold-d);font-weight:700}
+
+/* steps */
+.steps{list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:14px}
+.steps li{counter-increment:s;position:relative;padding-left:52px;font-size:14px;min-height:38px;display:flex;align-items:center}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:38px;height:38px;background:var(--gold);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600}
+
+/* faq */
+.faq{display:flex;flex-direction:column;gap:12px}
+.faq .q{background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:16px}
+.faq .q .qq{font-weight:700;font-size:14px;margin-bottom:8px;padding-left:24px;position:relative}
+.faq .q .qq::before{content:"Q.";position:absolute;left:0;color:var(--gold-d);font-family:'Cormorant Garamond',serif}
+.faq .q .aa{font-size:13.5px;color:var(--sub);padding-left:24px;position:relative}
+.faq .q .aa::before{content:"A.";position:absolute;left:0;color:var(--ink);font-family:'Cormorant Garamond',serif}
+
+/* closing */
+.closing{background:linear-gradient(180deg,#efe6d4,#e7dcc6);text-align:center}
+.closing .sec-t{margin-bottom:16px}
+.closing .p{color:var(--ink)}
+
+.ft{text-align:center;padding:24px;color:var(--sub);font-size:11px;border-top:1px solid var(--line)}
+.ft .en{font-size:12px;letter-spacing:2px;color:var(--gold-d);display:block;margin-bottom:6px}
 </style>
 </head>
 <body>
-<div class="wrap">
-<div class="fr">depuis 2024</div>
-<div class="mark">🌾</div>
-<h1>麹フレンチ</h1>
-<div class="dv"><span></span>&#10022;<span></span></div>
-<p>発酵と麹でつくる、<br>あたらしいおうちフレンチ。<br><br>「なぜそうするか」から学ぶ、<br>あやシェフの新しい学びの場を<br>準備しています。</p>
-<div class="soon">COMING SOON</div>
-<div class="ft">&copy; ayachef</div>
+<div class="c">
+
+<!-- HERO -->
+<div class="hero">
+  <div class="tag"><span>8月末 Zoom開催</span><span>参加無料</span><span>アーカイブ配信あり</span><span>顔出し不要</span></div>
+  <div class="grain">🌾</div>
+  <p class="lead-s">冷蔵庫で寝ている麹に、次の出番を。</p>
+  <h1><span class="u">その塩麹、<br>また余らせますか？</span></h1>
+  <p class="sub">作った日は、あんなに張り切ってたのに。<br>今日もフタを開けないまま、夜ごはんが終わった。<br><br><b>使いこなせないのは、腕のせいじゃない。</b><br>足りなかったのは、「なぜ」の説明だけ。</p>
+</div>
+
+<div class="cta-wrap">
+  <a href="#" class="cta">無料でセミナーに申し込む<span class="s">登録はメールアドレスのみ・氏名は任意です</span></a>
+  <p class="cta-note">※日程が確定しだい、メールでご案内します。</p>
+</div>
+
+<!-- 共感 -->
+<section>
+  <div class="divider"></div>
+  <h2 class="sec-t">その瓶に、<br>心当たりありませんか</h2>
+  <p class="sec-lead">前回の麹フレンチ体験会。実際に届いた声です。</p>
+  <ul class="voices">
+    <li>「作ってみたけど、使い方がわからず余ってしまう」</li>
+    <li>「お味噌汁に入れる事がほとんどで、他にレパートリーがない」</li>
+    <li>「焼くと焦げやすい。塩分が濃すぎるときも困る」</li>
+    <li>「持っていますが、冷蔵庫で寝てます」</li>
+  </ul>
+  <div class="bignum"><b>140<span style="font-size:22px">件</span></b><span class="u">アンケートで最多だった悩み＝「使い方がわからない」</span></div>
+  <p class="p" style="text-align:center;margin-top:16px">余らせているのは、<strong>あなただけじゃありません。</strong></p>
+</section>
+
+<!-- たまに使う -->
+<section class="alt">
+  <div class="divider"></div>
+  <h2 class="sec-t">「たまに使う」のまま、<br>また期限が来る</h2>
+  <p class="p muted">アンケートで最多だった使用頻度は「たまに使う」。全体の<span class="mark-y">45%</span>でした。</p>
+  <p class="p">思い出したときに味噌汁へ入れて、それ以外の出番がないまま、瓶は減らない。気づけば期限が切れて、また捨てる。「やっぱり私には向いてない」で、麹ごと手放してしまう。</p>
+  <p class="p">体にいいと思って迎えた麹が、冷蔵庫の重しになっている。<br>それは、もったいないと思いませんか。</p>
+</section>
+
+<!-- 反転 -->
+<section>
+  <div class="divider"></div>
+  <h2 class="sec-t">向いてないんじゃなく、<br>教わってないだけ</h2>
+  <p class="p">「麹って、扱いが難しい」。一度はそう感じたはずです。たしかに、レシピだけ渡されたら難しい。</p>
+  <p class="p">でも、麹が使いこなせないのは料理の腕や努力のせいではなく、<strong>「なぜそうなるか」を教わっていなかっただけ</strong>です。</p>
+  <p class="p">たとえば、麹で焼くと焦げる。あれは火が強いからではなく、<span class="mark-y">糖分</span>のせいです。だから温度を下げれば解決する。理屈が分かれば、レシピの外でも手が動きます。</p>
+</section>
+
+<div class="cta-wrap">
+  <a href="#" class="cta">無料でセミナーに申し込む<span class="s">まずは席だけ。メールアドレスひとつで。</span></a>
+  <p class="cta-note">※フォームが開かない場合、募集は終了しています。</p>
+</div>
+
+<!-- 何を教えるか -->
+<section class="alt">
+  <div class="divider"></div>
+  <h2 class="sec-t">だから、「使い切れる麹」<br>だけ教えます</h2>
+  <p class="p">この無料セミナー（第2弾）は、フレンチ料理家の私と、麹の専門家りょこさんの2人でお届けします。</p>
+  <p class="p">扱うのは「使い切れる麹」だけ。混ぜるだけの時短麹でも、レシピを増やす場でもありません。なぜ焦げるのか、どの麹がどの食材に合うのか、その理屈から話します。</p>
+  <p class="p">レシピ集を眺めるのとも、録画を一方的に見る座学とも違います。<strong>その場で質問できる回</strong>だから、あなたのつまずきに合わせて答えが返ってきます。覚えた一皿で終わらず、冷蔵庫にある食材で今晩の一皿が"自分で"組めるようになります。</p>
+</section>
+
+<!-- 持ち帰れるもの -->
+<section>
+  <div class="divider"></div>
+  <h2 class="sec-t">当日、持ち帰れるもの</h2>
+  <div class="take">
+    <div class="card">
+      <div class="n">01</div>
+      <h3>麹が焦げない火入れの理論</h3>
+      <p>焦げの正体は火の強さではなく糖分。温度の考え方ひとつで、鮭の玉ねぎ麹ソテーの焼き上がりが変わります。</p>
+    </div>
+    <div class="card">
+      <div class="n">02</div>
+      <h3>塩麹・醤油麹・甘麹の使い分け</h3>
+      <p>3つの役割が理屈で分かると、冷蔵庫で寝ていた麹に、順番に出番が回ってきます。</p>
+    </div>
+    <div class="card">
+      <div class="n">03</div>
+      <h3>麹フレンチの実演</h3>
+      <p>レモン麹を使った一皿を、その場で作ってお見せします。毎日のごはんに落とせる形で。</p>
+    </div>
+    <div class="card arch">
+      <div class="n">＋</div>
+      <h3>アーカイブ配信つき</h3>
+      <p>当日来られなくても大丈夫。後日、家事の合間に見られます。</p>
+    </div>
+  </div>
+  <p class="p muted" style="text-align:center;margin-top:18px;font-size:13px">参加特典も準備中です。決まりしだい、申込みいただいた方からご案内します。</p>
+</section>
+
+<!-- 実績 -->
+<section class="alt">
+  <div class="divider"></div>
+  <h2 class="sec-t">前回は、<br>755名が申し込みました</h2>
+  <p class="p">第1弾の体験会には<span class="mark-y">755名</span>の申込。アンケートには751件の回答が集まりました。その約8割は、すでに麹を買ったり作ったりしたことのある人。つまり、「持ってるのに使えていない」ところから始めた人たちです。</p>
+  <ul class="voices">
+    <li>「冷やしたバターは目から鱗でした」</li>
+    <li>「麹のハードルが下がりました」</li>
+  </ul>
+  <p class="p" style="margin-top:16px">同じ場所でつまずいていた人の、ハードルが下がる。第2弾は、その続きです。</p>
+</section>
+
+<!-- 講師 -->
+<section>
+  <div class="divider"></div>
+  <h2 class="sec-t">教えるのは、この2人</h2>
+  <div class="teacher">
+    <div class="role">フレンチ料理家</div>
+    <div class="nm">あやシェフ（深沢あや）</div>
+    <p>フレンチ歴10年、書籍を4冊。400名のオンラインサロンで毎日のごはん作りと向き合ってきました。教えるときは、いつも「なぜ」から。理屈が分かれば、火加減はもう怖くないからです。体験会のアンケートにも、ぜんぶ目を通しました。みなさんがどこでつまずくか、知ったうえで話します。</p>
+  </div>
+  <div class="teacher">
+    <div class="role">麹の専門家</div>
+    <div class="nm">りょこさん</div>
+    <p>麹そのものの疑問は、りょこさんが引き受けます。「作ってみたいけど腐らせそう」という仕込みや保存の不安も、聞きたいことをその場でどうぞ。</p>
+  </div>
+</section>
+
+<!-- 安心 -->
+<section class="alt">
+  <div class="divider"></div>
+  <h2 class="sec-t">構えなくて、大丈夫です</h2>
+  <ul class="checks">
+    <li>参加は無料です</li>
+    <li>麹を使ったことがなくてもOK</li>
+    <li>アーカイブ配信あり。当日欠席でも見られます</li>
+    <li>顔出し不要。見るだけの参加で大丈夫</li>
+    <li>オンラインサロンPlaisirとは別の企画です</li>
+  </ul>
+</section>
+
+<!-- 3ステップ -->
+<section>
+  <div class="divider"></div>
+  <h2 class="sec-t">申込みから当日まで、<br>3ステップ</h2>
+  <ul class="steps">
+    <li>申込フォームにメールアドレスを登録する（氏名は任意）</li>
+    <li>届いたメールで、Zoomの参加URLを受け取る</li>
+    <li>8月末の当日、Zoomを開くだけ。材料の準備は要りません</li>
+  </ul>
+</section>
+
+<!-- FAQ -->
+<section class="alt">
+  <div class="divider"></div>
+  <h2 class="sec-t">よくある質問</h2>
+  <div class="faq">
+    <div class="q"><div class="qq">麹をほとんど使ったことがなくても大丈夫ですか？</div><div class="aa">大丈夫です。「なぜ」から話すので、これから始める人ほど遠回りせずに済みます。</div></div>
+    <div class="q"><div class="qq">何度も余らせてきました。今回も同じ気がします。</div><div class="aa">余ったのはレシピ単位で覚えていたから。理屈から入ると、残った麹の使い道を自分で思いつけるようになります。</div></div>
+    <div class="q"><div class="qq">当日は都合が合いません。</div><div class="aa">アーカイブ配信があるので、あとから好きな時間に見られます。</div></div>
+    <div class="q"><div class="qq">手作りの麹を腐らせそうで不安です。</div><div class="aa">仕込みや保存の疑問は、麹の専門家りょこさんが当日その場でお答えします。</div></div>
+    <div class="q"><div class="qq">しつこく勧誘されませんか？</div><div class="aa">ありません。セミナーを受け取って、そこで終わりにしてもらって大丈夫です。</div></div>
+  </div>
+</section>
+
+<!-- クロージング -->
+<section class="closing">
+  <div class="divider"></div>
+  <h2 class="sec-t">麹に、味噌汁の<br>次の出番を</h2>
+  <p class="p">このまま様子を見ても、冷蔵庫の景色は変わりません。瓶の中の麹は、また静かに期限を迎えます。</p>
+  <p class="p">でも、つまずきの正体が「教わっていないだけ」なら、<strong>8月末に変えられます。</strong></p>
+  <p class="p">冷蔵庫を開けて、麹と目が合って、今晩の一皿がすっと決まる。<br>家族の「おいしい」は、その先に。</p>
+</section>
+
+<div class="cta-wrap" style="padding-bottom:30px">
+  <a href="#" class="cta">無料でセミナーに申し込む<span class="s">参加は無料。メールアドレスひとつで席がとれます。</span></a>
+  <p class="cta-note">※フォームが開かない場合、募集は終了しています。</p>
+</div>
+
+<div class="ft">
+  <span class="en">Koji &times; French</span>
+  麹からはじめる発酵フレンチ<br>
+  &copy; ayachef
+</div>
+
 </div>
 </body>
 </html>
