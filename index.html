@@ -13,97 +13,111 @@
 <meta property="og:image" content="https://koji.aya-fukazawa.com/ogp.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400;1,500&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌾</text></svg>">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
- --bg:#f7f2ea; --ink:#3a2a1a; --sub:#6a5a48; --line:#e5dccc;
- --gold:#c99a3f; --gold-d:#a87f2c; --cream:#fffdf8;
- --cta:#d98a24; --cta-d:#c1761a;
+ --bg:#F3EEE5; --card:#FFFFFF; --cream:#FAF6ED; --ink:#3A3226; --sub:#6B6155;
+ --line:#E3D9C6; --gold:#B08D46; --gold-l:#C9B078; --green:#7A8471;
+ --cta:#8C5A5A; --cta-d:#7A4C4C;
 }
-body{font-family:'Hiragino Mincho ProN','Yu Mincho','Noto Serif JP',serif;background:var(--bg);color:var(--ink);line-height:1.9;-webkit-font-smoothing:antialiased;font-size:15px}
+body{font-family:'Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',serif;font-weight:500;background:var(--bg);color:var(--ink);line-height:1.95;-webkit-font-smoothing:antialiased;font-size:17px}
 .c{max-width:480px;margin:0 auto;background:var(--bg);overflow:hidden}
 img{max-width:100%;display:block}
-.en{font-family:'Cormorant Garamond',serif;letter-spacing:3px}
+.en{font-family:'Cormorant Garamond',serif;font-style:italic}
 strong{font-weight:700}
-.mark-y{color:var(--cta-d);font-weight:700}
+.mark{color:var(--cta);font-weight:700}
 
 /* HERO */
-.hero{padding:40px 26px 34px;text-align:center;background:linear-gradient(180deg,#efe6d4 0%,#f7f2ea 100%);border-bottom:1px solid var(--line)}
-.hero .tag{display:inline-flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-bottom:22px}
-.hero .tag span{font-size:11px;letter-spacing:1px;color:var(--gold-d);border:1px solid var(--gold);border-radius:20px;padding:4px 12px;background:var(--cream)}
-.hero .lead-s{font-size:13px;color:var(--sub);letter-spacing:2px;margin-bottom:14px}
-.hero h1{font-size:30px;font-weight:700;line-height:1.55;letter-spacing:1px;margin-bottom:20px}
-.hero h1 .u{background:linear-gradient(transparent 62%, #f3d79b 62%)}
-.hero .sub{font-size:14px;color:var(--sub);line-height:2}
-.hero .sub b{color:var(--ink)}
-.hero .grain{font-size:34px;margin-bottom:10px}
+.hero{padding:46px 24px 26px;text-align:center;background:linear-gradient(180deg,#EDE5D2 0%,var(--bg) 100%)}
+.hero .eyebrow{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;letter-spacing:4px;color:var(--gold);margin-bottom:4px}
+.hero .eyebrow-sub{font-size:12px;letter-spacing:3px;color:var(--sub);margin-bottom:20px}
+.hero .tag{display:inline-flex;flex-wrap:wrap;justify-content:center;gap:7px;margin-bottom:22px}
+.hero .tag span{font-size:12px;letter-spacing:1px;color:var(--gold);border:1px solid var(--gold-l);border-radius:20px;padding:5px 13px;background:#fff}
+.hero .lead-s{font-size:14px;color:var(--sub);letter-spacing:2px;margin-bottom:14px}
+.hero h1{font-size:32px;font-weight:700;line-height:1.55;letter-spacing:1px;margin-bottom:20px}
+.hero h1 .u{background:linear-gradient(transparent 64%,#EAD9AE 64%)}
+.hero .sub{font-size:16px;color:var(--sub);line-height:2}
+.hero .sub b{color:var(--ink);font-weight:700}
+
+/* HERO PHOTO */
+.photo-wrap{padding:6px 24px 0}
+.photo-wrap img{width:100%;height:auto;border-radius:18px;box-shadow:0 14px 34px rgba(58,50,38,.18)}
+.photo-cap{font-family:'Cormorant Garamond',serif;font-style:italic;text-align:center;font-size:13px;color:var(--sub);letter-spacing:1px;margin-top:10px}
+.photo-cap .jp{font-family:'Noto Serif JP',serif;font-style:normal;font-size:12px}
 
 /* CTA */
-.cta-wrap{padding:22px 22px 6px;text-align:center}
-.cta{display:block;background:var(--cta);color:#fff;text-decoration:none;font-weight:700;font-size:17px;letter-spacing:1px;padding:18px 20px;border-radius:14px;box-shadow:0 8px 20px rgba(217,138,36,.32);transition:transform .1s,box-shadow .2s}
+.cta-wrap{padding:26px 20px 8px}
+.cta-box{background:var(--cream);border:1px solid var(--line);border-radius:20px;padding:24px 18px 20px;text-align:center;box-shadow:0 10px 26px rgba(58,50,38,.08)}
+.cta-box .cta-eyebrow{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;letter-spacing:3px;color:var(--gold);margin-bottom:12px}
+.cta{display:block;background:var(--cta);color:#fff;text-decoration:none;font-weight:700;font-size:18px;letter-spacing:1px;padding:20px 16px;border-radius:14px;box-shadow:0 8px 20px rgba(140,90,90,.35);transition:transform .1s}
 .cta:active{transform:translateY(1px)}
-.cta .s{display:block;font-size:11px;font-weight:400;opacity:.92;margin-top:4px;letter-spacing:0}
-.cta-note{font-size:11px;color:var(--sub);margin-top:10px;line-height:1.7}
+.cta .s{display:block;font-size:12px;font-weight:500;opacity:.94;margin-top:5px;letter-spacing:0}
+.cta-note{font-size:13px;color:var(--sub);margin-top:12px;line-height:1.9}
 
 /* SECTION base */
-section{padding:38px 26px}
-.sec-t{font-size:20px;font-weight:700;line-height:1.6;text-align:center;margin-bottom:8px}
-.sec-lead{text-align:center;color:var(--sub);font-size:13px;margin-bottom:24px}
-.divider{width:44px;height:2px;background:var(--gold);margin:0 auto 20px}
-.alt{background:var(--cream)}
+section{padding:44px 24px 6px}
+.sec-head{text-align:center;margin-bottom:24px}
+.sec-num{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;letter-spacing:4px;color:var(--gold);display:block}
+.sec-num::after{content:"";display:block;width:44px;height:1px;background:var(--gold-l);margin:12px auto 16px}
+.sec-t{font-size:27px;font-weight:700;line-height:1.6}
+.sec-lead{color:var(--sub);font-size:14px;margin-top:12px}
+
+.p{font-size:17px;margin-bottom:18px}
+.p.muted{color:var(--sub)}
 
 /* voices */
 .voices{list-style:none;display:flex;flex-direction:column;gap:12px}
-.voices li{background:var(--bg);border-left:3px solid var(--gold);border-radius:0 10px 10px 0;padding:14px 16px;font-size:14px;color:var(--ink)}
-.alt .voices li{background:#f5efe3}
-.bignum{text-align:center;margin:20px 0 4px}
-.bignum b{font-size:40px;color:var(--gold-d);font-weight:700;line-height:1}
-.bignum .u{display:block;font-size:12px;color:var(--sub);letter-spacing:1px;margin-top:4px}
-
-.p{font-size:14.5px;color:var(--ink);margin-bottom:16px}
-.p.muted{color:var(--sub)}
+.voices li{background:#fff;border-radius:16px;padding:16px 18px 16px 48px;font-size:16px;box-shadow:0 6px 16px rgba(58,50,38,.07);position:relative}
+.voices li:nth-child(even){background:var(--cream)}
+.voices li::before{content:"\201C";font-family:'Cormorant Garamond',serif;position:absolute;left:16px;top:6px;font-size:34px;color:var(--gold)}
+.bignum{text-align:center;margin:26px 0 8px}
+.bignum b{font-size:46px;color:var(--gold);font-weight:700;line-height:1;font-family:'Cormorant Garamond',serif;font-style:italic}
+.bignum .t{font-size:22px;color:var(--gold);font-weight:700}
+.bignum .u{display:block;font-size:13px;color:var(--sub);letter-spacing:1px;margin-top:8px}
 
 /* takeaways */
-.take{display:flex;flex-direction:column;gap:14px;margin-top:6px}
-.take .card{background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:20px 18px}
-.take .n{font-family:'Cormorant Garamond',serif;font-size:13px;color:var(--gold-d);letter-spacing:2px;margin-bottom:6px}
-.take h3{font-size:16px;font-weight:700;margin-bottom:8px;line-height:1.5}
-.take p{font-size:13.5px;color:var(--sub);line-height:1.85}
-.take .arch{background:#efe6d4;border:none}
+.take{display:flex;flex-direction:column;gap:16px;margin-top:6px}
+.take .card{background:#fff;border-radius:24px;border-top:4px solid var(--gold);box-shadow:0 12px 28px rgba(58,50,38,.10);padding:24px 20px}
+.take .n{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--gold);letter-spacing:3px;margin-bottom:6px}
+.take h3{font-size:19px;font-weight:700;margin-bottom:8px;line-height:1.5}
+.take p{font-size:16px;color:var(--sub);line-height:1.85}
+.take .arch{background:var(--cream)}
 
 /* teachers */
-.teacher{background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:20px 18px;margin-bottom:14px}
-.teacher .role{font-size:12px;color:var(--gold-d);letter-spacing:1px;margin-bottom:2px}
-.teacher .nm{font-size:18px;font-weight:700;margin-bottom:10px}
-.teacher p{font-size:13.5px;color:var(--sub);line-height:1.9}
+.teacher{background:#fff;border-radius:24px;border-top:4px solid var(--gold);box-shadow:0 12px 28px rgba(58,50,38,.10);padding:24px 20px;margin-bottom:16px}
+.teacher .role{font-size:13px;color:var(--gold);letter-spacing:2px;margin-bottom:2px}
+.teacher .nm{font-size:21px;font-weight:700;margin-bottom:10px}
+.teacher p{font-size:16px;color:var(--sub);line-height:1.9}
 
 /* checklist */
-.checks{list-style:none;display:flex;flex-direction:column;gap:10px}
-.checks li{position:relative;padding-left:30px;font-size:14px;color:var(--ink)}
-.checks li::before{content:"✓";position:absolute;left:0;top:0;color:var(--gold-d);font-weight:700}
+.checks{list-style:none;display:flex;flex-direction:column;gap:12px}
+.checks li{background:#fff;border-radius:14px;padding:14px 16px 14px 54px;position:relative;font-size:16px;box-shadow:0 6px 16px rgba(58,50,38,.07)}
+.checks li:nth-child(even){background:var(--cream)}
+.checks li::before{content:"✓";position:absolute;left:16px;top:50%;transform:translateY(-50%);width:26px;height:26px;background:var(--green);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px}
 
 /* steps */
 .steps{list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:14px}
-.steps li{counter-increment:s;position:relative;padding-left:52px;font-size:14px;min-height:38px;display:flex;align-items:center}
-.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:38px;height:38px;background:var(--gold);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600}
+.steps li{counter-increment:s;position:relative;background:#fff;border-radius:16px;padding:18px 16px 18px 66px;font-size:16px;box-shadow:0 6px 16px rgba(58,50,38,.07);display:flex;align-items:center;min-height:74px}
+.steps li:nth-child(even){background:var(--cream)}
+.steps li::before{content:counter(s);position:absolute;left:16px;top:50%;transform:translateY(-50%);width:38px;height:38px;background:var(--gold);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600}
 
 /* faq */
-.faq{display:flex;flex-direction:column;gap:12px}
-.faq .q{background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:16px}
-.faq .q .qq{font-weight:700;font-size:14px;margin-bottom:8px;padding-left:24px;position:relative}
-.faq .q .qq::before{content:"Q.";position:absolute;left:0;color:var(--gold-d);font-family:'Cormorant Garamond',serif}
-.faq .q .aa{font-size:13.5px;color:var(--sub);padding-left:24px;position:relative}
-.faq .q .aa::before{content:"A.";position:absolute;left:0;color:var(--ink);font-family:'Cormorant Garamond',serif}
+.faq{display:flex;flex-direction:column;gap:14px}
+.faq .q{background:#fff;border-radius:16px;padding:18px;box-shadow:0 6px 16px rgba(58,50,38,.07)}
+.faq .q .qq{font-weight:700;font-size:16.5px;margin-bottom:8px;padding-left:26px;position:relative;line-height:1.7}
+.faq .q .qq::before{content:"Q.";position:absolute;left:0;color:var(--gold);font-family:'Cormorant Garamond',serif;font-style:italic}
+.faq .q .aa{font-size:16px;color:var(--sub);padding-left:26px;position:relative;line-height:1.85}
+.faq .q .aa::before{content:"A.";position:absolute;left:0;color:var(--ink);font-family:'Cormorant Garamond',serif;font-style:italic}
 
 /* closing */
-.closing{background:linear-gradient(180deg,#efe6d4,#e7dcc6);text-align:center}
-.closing .sec-t{margin-bottom:16px}
+.closing{background:linear-gradient(180deg,#EDE5D2,#E5DBC5);text-align:center;padding:46px 24px 40px;margin-top:38px}
+.closing .sec-t{margin-bottom:18px}
 .closing .p{color:var(--ink)}
 
-.ft{text-align:center;padding:24px;color:var(--sub);font-size:11px;border-top:1px solid var(--line)}
-.ft .en{font-size:12px;letter-spacing:2px;color:var(--gold-d);display:block;margin-bottom:6px}
+.ft{text-align:center;padding:26px;color:var(--sub);font-size:12px;border-top:1px solid var(--line)}
+.ft .en{font-size:14px;letter-spacing:3px;color:var(--gold);display:block;margin-bottom:6px}
 </style>
 </head>
 <body>
@@ -111,69 +125,91 @@ section{padding:38px 26px}
 
 <!-- HERO -->
 <div class="hero">
+  <p class="eyebrow">Koji &times; French</p>
+  <p class="eyebrow-sub">麹からはじめる発酵フレンチ</p>
   <div class="tag"><span>8月末 Zoom開催</span><span>参加無料</span><span>アーカイブ配信あり</span><span>顔出し不要</span></div>
-  <div class="grain">🌾</div>
   <p class="lead-s">冷蔵庫で寝ている麹に、次の出番を。</p>
   <h1><span class="u">その塩麹、<br>また余らせますか？</span></h1>
   <p class="sub">作った日は、あんなに張り切ってたのに。<br>今日もフタを開けないまま、夜ごはんが終わった。<br><br><b>使いこなせないのは、腕のせいじゃない。</b><br>足りなかったのは、「なぜ」の説明だけ。</p>
 </div>
 
+<div class="photo-wrap">
+  <img src="hero.jpg" width="1400" height="1522" alt="鮭のレモンクリームソース">
+  <p class="photo-cap">Salmon &amp; Cream <span class="jp">｜鮭のレモンクリームソース。私の台所から</span></p>
+</div>
+
 <div class="cta-wrap">
-  <a href="https://utage-system.com/line/open/WGnQPXc0J9fx?mtid=vcCq4HpbZASK" class="cta">LINEで無料ライブに申し込む<span class="s">お申込みはLINEの友だち追加だけ（1タップ）</span></a>
-  <p class="cta-note">※日程が確定しだい、LINEでご案内します。<br>※前回ご参加の方も、LINE登録がまだの場合はこちらからどうぞ。</p>
+  <div class="cta-box">
+    <p class="cta-eyebrow">Free Online Live</p>
+    <a href="https://utage-system.com/line/open/WGnQPXc0J9fx?mtid=vcCq4HpbZASK" class="cta">LINEで無料ライブに申し込む<span class="s">お申込みはLINEの友だち追加だけ（1タップ）</span></a>
+    <p class="cta-note">※日程が確定しだい、LINEでご案内します。<br>※前回ご参加の方も、LINE登録がまだの場合はこちらからどうぞ。</p>
+  </div>
 </div>
 
 <!-- 共感 -->
 <section>
-  <div class="divider"></div>
-  <h2 class="sec-t">その瓶に、<br>心当たりありませんか</h2>
-  <p class="sec-lead">前回の麹フレンチ体験会。実際に届いた声です。</p>
+  <div class="sec-head">
+    <span class="sec-num">01 &mdash; Voices</span>
+    <h2 class="sec-t">その瓶に、<br>心当たりありませんか</h2>
+    <p class="sec-lead">前回の麹フレンチ体験会。実際に届いた声です。</p>
+  </div>
   <ul class="voices">
     <li>「作ってみたけど、使い方がわからず余ってしまう」</li>
     <li>「お味噌汁に入れる事がほとんどで、他にレパートリーがない」</li>
     <li>「焼くと焦げやすい。塩分が濃すぎるときも困る」</li>
     <li>「持っていますが、冷蔵庫で寝てます」</li>
   </ul>
-  <div class="bignum"><b>140<span style="font-size:22px">件</span></b><span class="u">アンケートで最多だった悩み＝「使い方がわからない」</span></div>
+  <div class="bignum"><b>140</b><span class="t">件</span><span class="u">アンケートで最多だった悩み＝「使い方がわからない」</span></div>
   <p class="p" style="text-align:center;margin-top:16px">余らせているのは、<strong>あなただけじゃありません。</strong></p>
 </section>
 
 <!-- たまに使う -->
-<section class="alt">
-  <div class="divider"></div>
-  <h2 class="sec-t">「たまに使う」のまま、<br>また期限が来る</h2>
-  <p class="p muted">アンケートで最多だった使用頻度は「たまに使う」。全体の<span class="mark-y">45%</span>でした。</p>
-  <p class="p">思い出したときに味噌汁へ入れて、それ以外の出番がないまま、瓶は減らない。気づけば期限が切れて、また捨てる。「やっぱり私には向いてない」で、麹ごと手放してしまう。</p>
+<section>
+  <div class="sec-head">
+    <span class="sec-num">02 &mdash; Reality</span>
+    <h2 class="sec-t">「たまに使う」のまま、<br>また期限が来る</h2>
+  </div>
+  <p class="p muted">アンケートで最多だった使用頻度は「たまに使う」。全体の<span class="mark">45%</span>でした。</p>
+  <p class="p">思い出したときに味噌汁へ入れて、それ以外の出番がないまま、瓶は減らない。<br>気づけば期限が切れて、また捨てる。「やっぱり私には向いてない」で、麹ごと手放してしまう。</p>
   <p class="p">体にいいと思って迎えた麹が、冷蔵庫の重しになっている。<br>それは、もったいないと思いませんか。</p>
 </section>
 
 <!-- 反転 -->
 <section>
-  <div class="divider"></div>
-  <h2 class="sec-t">向いてないんじゃなく、<br>教わってないだけ</h2>
-  <p class="p">「麹って、扱いが難しい」。一度はそう感じたはずです。たしかに、レシピだけ渡されたら難しい。</p>
+  <div class="sec-head">
+    <span class="sec-num">03 &mdash; Truth</span>
+    <h2 class="sec-t">向いてないんじゃなく、<br>教わってないだけ</h2>
+  </div>
+  <p class="p">「麹って、扱いが難しい」。一度はそう感じたはずです。<br>たしかに、レシピだけ渡されたら難しい。</p>
   <p class="p">でも、麹が使いこなせないのは料理の腕や努力のせいではなく、<strong>「なぜそうなるか」を教わっていなかっただけ</strong>です。</p>
-  <p class="p">たとえば、麹で焼くと焦げる。あれは火が強いからではなく、<span class="mark-y">糖分</span>のせいです。だから温度を下げれば解決する。理屈が分かれば、レシピの外でも手が動きます。</p>
+  <p class="p">たとえば、麹で焼くと焦げる。あれは火が強いからではなく、<span class="mark">糖分</span>のせいです。<br>だから温度を下げれば解決する。理屈が分かれば、レシピの外でも手が動きます。</p>
 </section>
 
 <div class="cta-wrap">
-  <a href="https://utage-system.com/line/open/WGnQPXc0J9fx?mtid=vcCq4HpbZASK" class="cta">LINEで無料ライブに申し込む<span class="s">まずは席だけ。LINEで1タップ。</span></a>
-  <p class="cta-note">※日程が確定しだい、LINEでご案内します。<br>※前回ご参加の方も、LINE登録がまだの場合はこちらからどうぞ。</p>
+  <div class="cta-box">
+    <p class="cta-eyebrow">Free Online Live</p>
+    <a href="https://utage-system.com/line/open/WGnQPXc0J9fx?mtid=vcCq4HpbZASK" class="cta">LINEで無料ライブに申し込む<span class="s">まずは席だけ。LINEで1タップ。</span></a>
+    <p class="cta-note">※日程が確定しだい、LINEでご案内します。<br>※前回ご参加の方も、LINE登録がまだの場合はこちらからどうぞ。</p>
+  </div>
 </div>
 
 <!-- 何を教えるか -->
-<section class="alt">
-  <div class="divider"></div>
-  <h2 class="sec-t">だから、「使い切れる麹」<br>だけ教えます</h2>
+<section>
+  <div class="sec-head">
+    <span class="sec-num">04 &mdash; Concept</span>
+    <h2 class="sec-t">だから、「使い切れる麹」<br>だけ教えます</h2>
+  </div>
   <p class="p">この無料オンラインライブ（第2弾）は、フレンチ料理家の私と、麹の専門家りょこさんの2人でお届けします。</p>
-  <p class="p">扱うのは「使い切れる麹」だけ。混ぜるだけの時短麹でも、レシピを増やす場でもありません。なぜ焦げるのか、どの麹がどの食材に合うのか、その理屈から話します。</p>
-  <p class="p">レシピ集を眺めるのとも、録画を一方的に見る座学とも違います。<strong>その場で質問できる回</strong>だから、あなたのつまずきに合わせて答えが返ってきます。覚えた一皿で終わらず、冷蔵庫にある食材で今晩の一皿が"自分で"組めるようになります。</p>
+  <p class="p">扱うのは「使い切れる麹」だけ。混ぜるだけの時短麹でも、レシピを増やす場でもありません。<br>なぜ焦げるのか、どの麹がどの食材に合うのか、その理屈から話します。</p>
+  <p class="p">レシピ集を眺めるのとも、録画を一方的に見る座学とも違います。<strong>その場で質問できる回</strong>だから、あなたのつまずきに合わせて答えが返ってきます。<br>覚えた一皿で終わらず、冷蔵庫にある食材で今晩の一皿が&quot;自分で&quot;組めるようになります。</p>
 </section>
 
 <!-- 持ち帰れるもの -->
 <section>
-  <div class="divider"></div>
-  <h2 class="sec-t">当日、持ち帰れるもの</h2>
+  <div class="sec-head">
+    <span class="sec-num">05 &mdash; Takeaways</span>
+    <h2 class="sec-t">当日、持ち帰れるもの</h2>
+  </div>
   <div class="take">
     <div class="card">
       <div class="n">01</div>
@@ -196,41 +232,47 @@ section{padding:38px 26px}
       <p>当日来られなくても大丈夫。後日、家事の合間に見られます。</p>
     </div>
   </div>
-  <p class="p muted" style="text-align:center;margin-top:18px;font-size:13px">参加特典も準備中です。決まりしだい、申込みいただいた方からご案内します。</p>
+  <p class="p muted" style="text-align:center;margin-top:20px;font-size:14px">参加特典も準備中です。決まりしだい、申込みいただいた方からご案内します。</p>
 </section>
 
 <!-- 実績 -->
-<section class="alt">
-  <div class="divider"></div>
-  <h2 class="sec-t">前回は、<br>755名が申し込みました</h2>
-  <p class="p">第1弾の体験会には<span class="mark-y">755名</span>の申込。アンケートには751件の回答が集まりました。その約8割は、すでに麹を買ったり作ったりしたことのある人。つまり、「持ってるのに使えていない」ところから始めた人たちです。</p>
+<section>
+  <div class="sec-head">
+    <span class="sec-num">06 &mdash; Proof</span>
+    <h2 class="sec-t">前回は、<br>755名が申し込みました</h2>
+  </div>
+  <p class="p">第1弾の体験会には<span class="mark">755名</span>の申込。アンケートには751件の回答が集まりました。<br>その約8割は、すでに麹を買ったり作ったりしたことのある人。つまり、「持ってるのに使えていない」ところから始めた人たちです。</p>
   <ul class="voices">
     <li>「冷やしたバターは目から鱗でした」</li>
     <li>「麹のハードルが下がりました」</li>
   </ul>
-  <p class="p" style="margin-top:16px">同じ場所でつまずいていた人の、ハードルが下がる。第2弾は、その続きです。</p>
+  <p class="p" style="margin-top:18px">同じ場所でつまずいていた人の、ハードルが下がる。第2弾は、その続きです。</p>
 </section>
 
 <!-- 講師 -->
 <section>
-  <div class="divider"></div>
-  <h2 class="sec-t">教えるのは、この2人</h2>
+  <div class="sec-head">
+    <span class="sec-num">07 &mdash; Teachers</span>
+    <h2 class="sec-t">教えるのは、この2人</h2>
+  </div>
   <div class="teacher">
     <div class="role">フレンチ料理家</div>
     <div class="nm">あやシェフ（深沢あや）</div>
-    <p>フレンチ歴10年、書籍を4冊。400名のオンラインサロンで毎日のごはん作りと向き合ってきました。教えるときは、いつも「なぜ」から。理屈が分かれば、火加減はもう怖くないからです。体験会のアンケートにも、ぜんぶ目を通しました。みなさんがどこでつまずくか、知ったうえで話します。</p>
+    <p>フレンチ歴10年、書籍を4冊。400名のオンラインサロンで毎日のごはん作りと向き合ってきました。<br>教えるときは、いつも「なぜ」から。理屈が分かれば、火加減はもう怖くないからです。<br>体験会のアンケートにも、ぜんぶ目を通しました。みなさんがどこでつまずくか、知ったうえで話します。</p>
   </div>
   <div class="teacher">
     <div class="role">麹の専門家</div>
     <div class="nm">りょこさん</div>
-    <p>麹そのものの疑問は、りょこさんが引き受けます。「作ってみたいけど腐らせそう」という仕込みや保存の不安も、聞きたいことをその場でどうぞ。</p>
+    <p>麹そのものの疑問は、りょこさんが引き受けます。<br>「作ってみたいけど腐らせそう」という仕込みや保存の不安も、聞きたいことをその場でどうぞ。</p>
   </div>
 </section>
 
 <!-- 安心 -->
-<section class="alt">
-  <div class="divider"></div>
-  <h2 class="sec-t">構えなくて、大丈夫です</h2>
+<section>
+  <div class="sec-head">
+    <span class="sec-num">08 &mdash; Feel at Ease</span>
+    <h2 class="sec-t">構えなくて、大丈夫です</h2>
+  </div>
   <ul class="checks">
     <li>参加は無料です</li>
     <li>麹を使ったことがなくてもOK</li>
@@ -243,8 +285,10 @@ section{padding:38px 26px}
 
 <!-- 3ステップ -->
 <section>
-  <div class="divider"></div>
-  <h2 class="sec-t">申込みから当日まで、<br>3ステップ</h2>
+  <div class="sec-head">
+    <span class="sec-num">09 &mdash; Steps</span>
+    <h2 class="sec-t">申込みから当日まで、<br>3ステップ</h2>
+  </div>
   <ul class="steps">
     <li>ボタンからLINEを友だち追加する（1タップで完了）</li>
     <li>日程が確定したら、LINEでZoomの参加URLが届く</li>
@@ -253,30 +297,37 @@ section{padding:38px 26px}
 </section>
 
 <!-- FAQ -->
-<section class="alt">
-  <div class="divider"></div>
-  <h2 class="sec-t">よくある質問</h2>
+<section>
+  <div class="sec-head">
+    <span class="sec-num">10 &mdash; Q&amp;A</span>
+    <h2 class="sec-t">よくある質問</h2>
+  </div>
   <div class="faq">
     <div class="q"><div class="qq">麹をほとんど使ったことがなくても大丈夫ですか？</div><div class="aa">大丈夫です。「なぜ」から話すので、これから始める人ほど遠回りせずに済みます。</div></div>
     <div class="q"><div class="qq">何度も余らせてきました。今回も同じ気がします。</div><div class="aa">余ったのはレシピ単位で覚えていたから。理屈から入ると、残った麹の使い道を自分で思いつけるようになります。</div></div>
     <div class="q"><div class="qq">当日は都合が合いません。</div><div class="aa">アーカイブ配信があるので、あとから好きな時間に見られます。</div></div>
-    <div class="q"><div class="qq">前回の体験会に参加しました。また申込みが必要ですか？</div><div class="aa">LINEに登録済みの方はそのままで大丈夫です。日程とZoomのURLは同じLINEでご案内します。まだLINEに登録していない方は、ボタンからご登録ください。</div></div>
+    <div class="q"><div class="qq">前回の体験会に参加しました。また申込みが必要ですか？</div><div class="aa">LINEに登録済みの方はそのままで大丈夫です。<br>日程とZoomのURLは同じLINEでご案内します。まだLINEに登録していない方は、ボタンからご登録ください。</div></div>
     <div class="q"><div class="qq">手作りの麹を腐らせそうで不安です。</div><div class="aa">仕込みや保存の疑問は、麹の専門家りょこさんが当日その場でお答えします。</div></div>
   </div>
 </section>
 
 <!-- クロージング -->
 <section class="closing">
-  <div class="divider"></div>
+  <div class="sec-head" style="margin-bottom:10px">
+    <span class="sec-num">Bon App&eacute;tit</span>
+  </div>
   <h2 class="sec-t">麹に、味噌汁の<br>次の出番を</h2>
-  <p class="p">このまま様子を見ても、冷蔵庫の景色は変わりません。瓶の中の麹は、また静かに期限を迎えます。</p>
+  <p class="p" style="margin-top:18px">このまま様子を見ても、冷蔵庫の景色は変わりません。<br>瓶の中の麹は、また静かに期限を迎えます。</p>
   <p class="p">でも、つまずきの正体が「教わっていないだけ」なら、<strong>8月末に変えられます。</strong></p>
   <p class="p">冷蔵庫を開けて、麹と目が合って、今晩の一皿がすっと決まる。<br>家族の「おいしい」は、その先に。</p>
 </section>
 
-<div class="cta-wrap" style="padding-bottom:30px">
-  <a href="https://utage-system.com/line/open/WGnQPXc0J9fx?mtid=vcCq4HpbZASK" class="cta">LINEで無料ライブに申し込む<span class="s">参加は無料。LINEの友だち追加だけで席がとれます。</span></a>
-  <p class="cta-note">※日程が確定しだい、LINEでご案内します。<br>※前回ご参加の方も、LINE登録がまだの場合はこちらからどうぞ。</p>
+<div class="cta-wrap" style="padding-bottom:34px">
+  <div class="cta-box">
+    <p class="cta-eyebrow">Free Online Live</p>
+    <a href="https://utage-system.com/line/open/WGnQPXc0J9fx?mtid=vcCq4HpbZASK" class="cta">LINEで無料ライブに申し込む<span class="s">参加は無料。LINEの友だち追加だけで席がとれます。</span></a>
+    <p class="cta-note">※日程が確定しだい、LINEでご案内します。<br>※前回ご参加の方も、LINE登録がまだの場合はこちらからどうぞ。</p>
+  </div>
 </div>
 
 <div class="ft">
